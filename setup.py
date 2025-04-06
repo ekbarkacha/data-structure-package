@@ -2,9 +2,9 @@ from setuptools import setup, find_packages
 
 setup(
     name='ek_data_structures',
-    version="0.0.1",
+    version="0.0.2",
     description='A Python package that implements common data structures such as Array, Stack, Queue, Linked List, Binary Tree, and Graph.',
-    long_description=open('README.md').read(),
+    long_description=open('description.md').read(),
     long_description_content_type='text/markdown',
     author='Emmanuel Kirui Barkacha',
     author_email='ebarkacha@aimsammi.org',
