@@ -1,1 +1,5 @@
 data_stractures_venv
+ .ipynb_checkpoints
+ .DS_Store
+ ek_data_structures/__pycache__
+ ek_data_structures/.ipynb_checkpoints

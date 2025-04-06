@@ -171,7 +171,7 @@ bt.in_order()  # Output: 1 -> 2 -> 3 -> 4 (left root right)
 bt.pre_order()  # Output: 3 -> 1 -> 2 -> 4 (root left right)
 bt.post_order()  # Output: 3 -> 4 -> 1 -> 2 (root right left)
 ```
-For more detailed usage examples you can also check out the [binary tree example notebook](./ree_example.ipynb) .
+For more detailed usage examples you can also check out the [binary tree example notebook](./tree_example.ipynb) .
 
 ---
 
