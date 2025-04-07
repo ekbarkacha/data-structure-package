@@ -168,16 +168,20 @@ class BinaryTree:
   def post_order(self):
     stack = []
     current_node = self.root
+    last_visited_node = None
 
     while stack or current_node:
         if current_node:
-            # Process the current node (Root node)
-            print(current_node.data, end=" ")
             stack.append(current_node)
-            current_node = current_node.right 
-        else:
-            # If the right child is None, pop from stack and go to the left child
-            current_node = stack.pop()
             current_node = current_node.left
-
+        else:
+            peek_node = stack[-1]
+            # If right child exists and we are not yet processed it
+            if peek_node.right and last_visited_node != peek_node.right:
+                current_node = peek_node.right
+            else:
+                # Process the node
+                print(peek_node.data, end=" ")
+                last_visited_node = stack.pop()
+                
     print()

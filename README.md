@@ -3,23 +3,25 @@
 This package provides implementations of several common data structures and their basic operations. The package includes:
 
 - Array
-- Linked List
 - Stack
 - Queue
+- Linked List
+- Doubly Linked List
 - Binary Tree
 - Graph
 
-Each data structure is implemented with a set of core methods, providing users with the ability to manipulate and interact with the data structures in a straightforward way. Below is an overview of each data structure and the operations available.
+Each data structure is implemented with a set of core methods, providing users with the ability to manipulate and interact with the data structures in a direct way. Below is an overview of each data structure and the operations available.
 
 ## Table of Contents
 1. [Array Class](#array-class)
 2. [Stack Class](#stack-class)
 3. [Queue Class](#queue-class)
 4. [Linked List Class](#linked-list-class)
-5. [Binary Tree Class](#binary-tree-class)
-6. [Graph Class](#graph-class)
-7. [Installation](#installation)
-8. [Usage](#usage)
+5. [Doubly Linked List Class](#doubly-linked-list-class)
+6. [Binary Tree Class](#binary-tree-class)
+7. [Graph Class](#graph-class)
+8. [Installation](#installation)
+9. [Usage](#usage)
 
 ---
 
@@ -138,6 +140,32 @@ ll.display()  # Output: 10 -> 15 -> 20 -> None
 ```
 For more detailed usage examples you can also check out the [linked_list example notebook](./linked_list_example.ipynb) .
 
+---
+## Doubly Linked List Class
+
+The `DoublyLinkedList` class implements a doubly linked list with methods to add, remove, and access elements in the list. Each node here has references to both the previous and next nodes.
+
+### Supported Operations:
+- `insert_at_beginning(item)` - Inserts an item at the beginning of the list.
+- `insert_at(index, item)` - Inserts an item at a specific index.
+- `insert_at_end(item)` - Inserts an item at the end of the list.
+- `delete_item(index)` - Deletes the item at a specific index.
+- `display()` - Displays the entire list from start to end.
+- `search(item)` - Searches for an item in the list and returns `True` if it exists, `False` otherwise.
+- `get_length()` - Returns the number of nodes in the list.
+- `access(index)` - Accesses the node at a specific index and returns its data.
+- `update(index, item)` - Updates the node at a specific index with a new item.
+
+### Example:
+```python
+dll = DoublyLinkedList()
+dll.insert_at_beginning(10)
+dll.insert_at_end(20)
+dll.insert_at(1, 15)
+dll.display()  # Output: 10 <--> 15 <--> 20 <--> None
+```
+
+For more detailed usage examples you can also check out the [doubly_linked_list example notebook](./doubly_linked_list_example.ipynb) .
 
 ---
 
@@ -151,7 +179,7 @@ The `BinaryTree` class implements a binary tree, offering methods for traversal 
 - `delete(item)` - Deletes an item from the tree.
 - `in_order()` - Traverses the tree in-order (left, root, right).
 - `pre_order()` - Traverses the tree pre-order (root, left, right).
-- `post_order()` - Traverses the tree post-order (root, right, left).
+- `post_order()` - Traverses the tree post-order (left, right, root).
 
 ### Example:
 ```python
@@ -169,7 +197,7 @@ bt.insert("2")
 bt.insert("4")
 bt.in_order()  # Output: 1 -> 2 -> 3 -> 4 (left root right)
 bt.pre_order()  # Output: 3 -> 1 -> 2 -> 4 (root left right)
-bt.post_order()  # Output: 3 -> 4 -> 1 -> 2 (root right left)
+bt.post_order()  # Output: 2 -> 1 -> 4 -> 3 (left right root)
 ```
 For more detailed usage examples you can also check out the [binary tree example notebook](./tree_example.ipynb) .
 
