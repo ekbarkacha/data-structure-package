@@ -257,7 +257,7 @@ pip install ek-data-structures
 After installation, you can import the data structures into your Python code:
 
 ```python
-from ek_data_structures import Array, LinkedList, Queue, Stack, BinaryTree
+from ek_data_structures import Array, LinkedList, Queue, Stack, BinaryTree, DoublyLinkedList
 
 # Example usage
 arr = Array()

@@ -1,9 +1,9 @@
 data_stractures_venv
- .ipynb_checkpoints/
- .DS_Store
  ek_data_structures/__pycache__/
  ek_data_structures/.ipynb_checkpoints/
  description.md
  ek_data_structures.egg-info/
  dist/
  build/
+ .ipynb_checkpoints/
+ .DS_Store
